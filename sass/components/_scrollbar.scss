@@ -1,0 +1,14 @@
+::-webkit-scrollbar-track {
+    background-color: $bgScrollTrack;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: $bgScroll;
+}
+
+::-webkit-scrollbar-thumb {
+    height: 30px;
+    background-color: $bgScrollThumb;
+}

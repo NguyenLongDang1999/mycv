@@ -1,0 +1,44 @@
+.section {
+    position: relative;
+
+    &__background {
+        position: absolute;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        background-image: url(../images/header-bg.jpg);
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        overflow-x: hidden;
+
+        &-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: 998;
+            background-color: #343a4029;
+        }
+
+        h2 {
+            color: $colorWhite;
+            font-size: 60px;
+            margin: 0;
+            text-align: center;
+            font-family: Raleway;
+        }
+
+        p {
+            text-transform: capitalize;
+            text-align: center;
+            font-size: 30px;
+            margin-top: 10px;
+            font-family: Raleway;
+            color: $colorWhite;
+        }
+    }
+}

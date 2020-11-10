@@ -1,0 +1,14 @@
+@import 'abstracts/variables';
+
+@import 'base/reset';
+
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/responsive';
+
+@import 'components/background';
+@import 'components/about';
+@import 'components/scrollbar';
+@import 'components/skill';
+
+@import 'pages/index';
