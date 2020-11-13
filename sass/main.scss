@@ -1,14 +1,15 @@
+// abstracts
 @import 'abstracts/variables';
+@import 'abstracts/mixin';
 
+// base
 @import 'base/reset';
 
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/responsive';
-
-@import 'components/background';
+// component
+@import 'components/sidebar';
+@import 'components/home';
 @import 'components/about';
-@import 'components/scrollbar';
 @import 'components/skill';
-
-@import 'pages/index';
+@import 'components/responsive';
+@import 'components/contact';
+@import 'components/project';

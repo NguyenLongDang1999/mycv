@@ -1,0 +1,20 @@
+@mixin progressbar {
+    width: 100%;
+    height: 13px;
+    border-radius: 20px;
+    background-color: $bgDark;
+    position: relative;
+}
+
+@mixin progressbarBefore {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-51%);
+    left: 0;
+    z-index: 99;
+    height: 11px;
+    background-color: $bgMain;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}

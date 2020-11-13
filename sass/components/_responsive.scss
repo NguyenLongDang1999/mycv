@@ -1,0 +1,20 @@
+@media only screen and (max-width: 991px) {
+    body {
+        margin-left: 0;
+    }
+
+    .header {
+        &__sidebar {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateX(-260px);
+            transition: all 0.4s ease-in 0s;
+
+            &.active {
+                opacity: 1;
+                visibility: visible;
+                transform: translateX(0);
+            }
+        }
+    }
+}

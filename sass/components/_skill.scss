@@ -1,15 +1,129 @@
 .section {
-    position: relative;
+    &.section {
+        &__dark-2 {
+            background-color: $bgDark2;
+            padding-bottom: 100px;
+        }
+    }
 
     &__skill {
-        background-color: $bgBorder;
-        position: absolute;
-        z-index: 999;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        padding-top: 90px;
-        overflow-x: hidden;
+        &-progress {
+            &-title {
+                font-size: 16px;
+                color: $colorWhite;
+                text-transform: uppercase;
+                margin-bottom: 9px;
+            }
+
+            &-bar.html {
+                @include progressbar;
+
+                &::before {
+                    @include progressbarBefore;
+                    width: 70%;
+                }
+            }
+
+            &-bar.css {
+                @include progressbar;
+
+                &::before {
+                    @include progressbarBefore;
+                    width: 60%;
+                }
+            }
+
+
+            &-bar.scss {
+                @include progressbar;
+
+                &::before {
+                    @include progressbarBefore;
+                    width: 55%;
+                }
+            }
+
+
+            &-bar.jquery {
+                @include progressbar;
+
+                &::before {
+                    @include progressbarBefore;
+                    width: 55%;
+                }
+            }
+
+            &-bar.reactjs {
+                @include progressbar;
+
+                &::before {
+                    @include progressbarBefore;
+                    width: 15%;
+                }
+            }
+
+            &-bar.php {
+                @include progressbar;
+
+                &::before {
+                    @include progressbarBefore;
+                    width: 60%;
+                }
+            }
+
+            &-bar.laravel {
+                @include progressbar;
+
+                &::before {
+                    @include progressbarBefore;
+                    width: 55%;
+                }
+            }
+
+            &-bar.codeigniter {
+                @include progressbar;
+
+                &::before {
+                    @include progressbarBefore;
+                    width: 55%;
+                }
+            }
+
+            &-bar.bootstrap {
+                @include progressbar;
+
+                &::before {
+                    @include progressbarBefore;
+                    width: 70%;
+                }
+            }
+
+            &-bar.mysql {
+                @include progressbar;
+
+                &::before {
+                    @include progressbarBefore;
+                    width: 60%;
+                }
+            }
+
+            &-bar.git {
+                @include progressbar;
+
+                &::before {
+                    @include progressbarBefore;
+                    width: 40%;
+                }
+            }
+
+            &-bar.nodejs {
+                @include progressbar;
+
+                &::before {
+                    @include progressbarBefore;
+                    width: 10%;
+                }
+            }
+        }
     }
 }

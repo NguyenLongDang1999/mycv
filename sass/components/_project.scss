@@ -1,0 +1,23 @@
+.section {
+    &__project {
+        &-list {
+            font-size: 16px;
+            li {
+                line-height: 28px;
+            }
+
+            span {
+                color: $colorWhite;
+                text-transform: capitalize;
+            }
+
+            a {
+                text-decoration: none;
+
+                &:hover {
+                    color: $colorMain !important;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.section {
+    &__contact {
+        color: $colorWhite;
+
+        li {
+            line-height: 27px;
+            font-size: 16px;
+
+            .fa {
+                color: $colorMain;
+                margin-right: 10px;
+            }
+        }
+
+        .form-control {
+            background-color: $bgForm;
+            border: 1px solid $bgForm;
+            color: $colorWhite;
+        }
+
+        &-btn {
+            background-color: $bgMain;
+            color: $colorWhite;
+            width: 150px;
+            height: 40px;
+            border-radius: 20px;
+            line-height: 40px;
+            border: 0;
+            text-align: center;
+            text-transform: capitalize;
+            transition: all 0.5s ease-in-out;
+            font-weight: 600;
+
+            &:hover {
+                background-color: #1baa80;
+            }
+        }
+    }
+}

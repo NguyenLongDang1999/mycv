@@ -1,0 +1,54 @@
+.section {
+    &__home {
+        position: relative;
+        color: $colorWhite;
+
+        &-background {
+            background-image: url('../images/header-bg.jpg');
+            width: 100%;           
+            height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center 0px;
+        }
+
+        &-welcome {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 100%;
+
+            p {
+                text-transform: capitalize;
+                font-size: 28px;
+            }
+
+            h3 {
+                text-transform: capitalize;
+                font-size: 50px;
+            }
+
+            &-contact {
+                border: 2px solid $bgMain;
+                display: inline-block;
+                color: $colorWhite;
+                width: 170px;
+                height: 50px;
+                line-height: 49px;
+                border-radius: 20px;
+                margin-top: 20px;
+                text-transform: capitalize;
+                transition: all 0.4s ease-in 0s;
+
+                &:hover {
+                    background-color: $bgMain;
+                    text-decoration: none;
+                    color: $colorWhite;
+                }
+            }
+        }
+    }
+}
