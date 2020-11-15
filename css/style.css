@@ -17,7 +17,8 @@ body {
   font-size: 14px;
   font-weight: 400;
   font-family: "Poppins", sans-serif;
-  margin-left: 260px; }
+  margin-left: 260px;
+  overflow-x: hidden; }
 
 .overplay {
   background-color: #00000078;
